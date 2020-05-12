@@ -1,0 +1,17 @@
+Em casos que a média, mediana e moda não trazem informações o suficiente , há outras maneiras de examinar os dados.
+* Amplitude: É obtido o maior valor e o menor do conjunto e a subtração "Maior-Menor" é feita. Quanto menor for o resultado mais próximo é o intervalo entre os valores.
+A amplitude pode facilmente ser enganada por valores muito altos ou muito baixos. Por conta disso é importante saber "limpar" seus dados antes de analisa-los.
+
+Uma forma de limpar os dados é a Divisão de Quartis.
+A divisão de quartis ordena os valores do menor para o maior e os divide em três partes: 25% no começo, 50% no meio e 25% no fim.
+Os 25% do começo e os 25% do fim são descartados. Apenas os 50% do meio serão usados para fazer as contas necessárias como mediana, média e moda.
+Com esses dados é possível formar um gráfico com as seguintes informações no eixo Y de baixo para cima:
+1. O menor valor do conjunto;
+2. O primeiro valor que separa o conjunto dos 25% do inicio que serão descartados;
+3. O primeiro valor que separa o conjunto dos 25% do fim que serão descartados;
+4. O maior valor do conjunto.
+Após a marcação desses valores, um retângulo vertical é traçado entre o item 2 e 3 traçando uma linha reta nas extremidades desse retângulo até o item 1 e 4.
+Este desenho gráfico se chama boxplot e permite que seja possível visualizar com mais facilidade onde os dados estão concentrados e quais suas extremidades.
+Também é possível indicar a mediana em um boxplot, com um risco indicando o índice em que ela se encontra naquele conjunto de valores.
+
+No R Studio, ao colocar a função summary ele já nos retorna o primeiro e o terceito quartil.

@@ -1,0 +1,18 @@
+Media pode não ser acertiva em determinadas situações.
+Por exemplo em avaliações 1,1,1,10 é incorreto dizer que a média das avaliações é a soma de todos elementos divido pelo número de elementos.
+Neste caso, a mediana é uma boa alternativa, pois é o elemento que fica no meio da distribuição quando ela está ordenada. em caso de números pares de elementos
+é possível pegar 2 elementos do meio e fazer a média aritmetica entre eles.
+A moda é o elemento que mais se repete na distribuição.
+Média é boa para dados intervalares (Temp. por exemplo)
+Mediana e Moda são boas para dados ordinais (Notas por exemplo)
+----------
+Testar se a distribuição é normal:
+shapiro.test()
+Se o  p-value for menor que 0.5 a distribuição não é normal.
+Se atente aos resultados pois podem vir como: 6.77e-05 ou seja 6.77 elevado à 5 potência, o que não é normal. Saiba identificar este resultado.
+----------
+A moda não existe em R mas é possível criar uma função para calculá-la:
+mode <- function(x) {
+     ux <- unique(x)
+     ux[which.max(tabulate(match(x, ux)))]
+}

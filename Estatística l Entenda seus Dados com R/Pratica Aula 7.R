@@ -1,0 +1,7 @@
+numeros <- c(1,2,3,5,6,7,8,11,2,3,44,55,67,12,34,56)
+var(numeros)
+variancia <- var(numeros)
+sqrt(variancia)
+sd(numeros)
+nums <- read.csv(file="C:/Users/Usuario/Desktop/Cursos/Estatística/Estatística l Entenda seus Dados com R/numeros.csv")
+hist(nums$X1)
